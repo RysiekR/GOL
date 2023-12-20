@@ -7,17 +7,19 @@ for (int t = 0; t < 2; t++)
     {
         for (int j = 0; j < tw; j++)
         {
-            Console.Write(LD[i, j]);
-
-            if(LD[i,j]==2)
+            int wynik = LD[i,j];
+            if((i>=1 && i<4) && (j>=1 && j<4))
             {
-                LD[i,j]=3;
+
+                wynik = (LD[i-1,j-1]+LD[i-1,j]+LD[i-1,j+1]+LD[i,j-1]+LD[i,j]+LD[i,j+1]+LD[i+1,j-1]+LD[i+1,j]+LD[i+1,j+1]);
             }
+            LD[i,j]= wynik;
+            Console.Write(LD[i,j] + "  ");
         }
         Console.WriteLine("");
 
     }
-    Console.WriteLine("");
+    Console.WriteLine(".");
 
 }
 Console.ReadLine();

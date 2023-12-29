@@ -12,3 +12,4 @@ C:\Users\User\Documents\Csharp\GOL\obj\Debug\net8.0\refint\GOL.dll
 C:\Users\User\Documents\Csharp\GOL\obj\Debug\net8.0\GOL.pdb
 C:\Users\User\Documents\Csharp\GOL\obj\Debug\net8.0\GOL.genruntimeconfig.cache
 C:\Users\User\Documents\Csharp\GOL\obj\Debug\net8.0\ref\GOL.dll
+C:\Users\User\Documents\Csharp\GOL\obj\Debug\net8.0\GOL.sourcelink.json

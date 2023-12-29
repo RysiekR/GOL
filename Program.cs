@@ -90,3 +90,5 @@ while (true)
     Console.ReadLine();
 }
 
+// void DrawRectangle (System.Drawing.Pen pen, int 0, int 0, int 100, int 100){};
+

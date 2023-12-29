@@ -122,7 +122,7 @@ while (true)
 
         tablica = (int[,])tablicaKopia.Clone();
 
-        Console.WriteLine("Q to restart");
+        Console.WriteLine("ENTER to continue / Q to restart");
         string? quit = Console.ReadLine()?.ToLower().Trim();
 
         if (quit == "q")

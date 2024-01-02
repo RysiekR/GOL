@@ -1,5 +1,7 @@
-﻿Console.WriteLine("Hello, World!");
-int x = 32;
+﻿using System.Drawing;
+
+Console.WriteLine("Hello, World!");
+int x = 56;
 int[,] tablica = new int[x, x];
 int[,] tablicaKopia = new int[x, x];
 int wynik = 0;
@@ -108,7 +110,16 @@ while (true)
                         population++;
                     }
                     tablicaKopia[i, j] = wynik;
-                    Console.Write(tablicaKopia[i, j] + "  ");
+
+                    if (tablicaKopia[i, j] == 1)
+                    {
+                        Console.Write("#  ");
+                    }
+                    else
+                    {
+                        Console.Write("   ");
+                    }
+
                     wynik = 0;
                 }
                 Console.WriteLine("");
@@ -131,7 +142,24 @@ while (true)
         }
     }
 
-    // void DrawRectangle (System.Drawing.Pen pen, int 0, int 0, int 100, int 100){};
+    // void DrawRectangle (System.Drawing.Pen pen, int ai, int bj, int size, int size){};
 
+
+
+    // public void DrawRectangleFloat(PaintEventArgs e)
+    // {
+
+    //     // Create pen.
+    //     Pen blackPen = new Pen(Color.Black, 3);
+
+    //     // Create location and size of rectangle.
+    //     float x = 0.0F;
+    //     float y = 0.0F;
+    //     float width = 200.0F;
+    //     float height = 200.0F;
+
+    //     // Draw rectangle to screen.
+    //     e.Graphics.DrawRectangle(blackPen, x, y, width, height);
+    // }
 
 }
